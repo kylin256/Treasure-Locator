@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝藏位置辅助计算器 - FastAPI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>宝藏位置辅助计算器</h1>
+        <div class="controls">
+            <div class="control-group">
+                <label>选择宝藏形状 (可多选):</label>
+                <div class="shape-selection" id="shape-selection">
+                    <!-- 形状选项将通过JS动态生成 -->
+                </div>
+
+                <div class="rotation-info">
+                    系统默认考虑所有随机角度（0°, 90°, 180°, 270°）
+                </div>
+            </div>
+
+            <button id="reset-btn">重置用户输入</button>
+        </div>
+
+        <div class="shape-descriptions">
+            <!-- 形状描述将通过JS动态生成 -->
+        </div>
+
+        <div class="user-input-info">
+            <p>选择标记模式，然后点击下方网格标记宝藏位置：</p>
+
+            <div class="marking-mode">
+                <div class="marking-option">
+                    <input type="radio" id="mark-treasure" name="marking-mode" value="treasure" checked>
+                    <label for="mark-treasure">标记有宝藏</label>
+                </div>
+                <div class="marking-option">
+                    <input type="radio" id="mark-no-treasure" name="marking-mode" value="no-treasure">
+                    <label for="mark-no-treasure">标记无宝藏</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid" id="treasure-grid">
+                <!-- 5x5网格将通过JS填充 -->
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color treasure-color"></div>
+                <span>有宝藏</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color no-treasure-color"></div>
+                <span>无宝藏</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color probability-low"></div>
+                <span>概率: 低</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color probability-medium"></div>
+                <span>概率: 中</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color probability-high"></div>
+                <span>概率: 高</span>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="status" id="result-info">请选择形状开始分析</div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
