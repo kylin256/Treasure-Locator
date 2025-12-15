@@ -76,7 +76,7 @@
   
 ## 🔧 开发相关
 涉及算法部分，篇幅较长放在博客里了
-网址1号：需要有Github加速，不然容易打不开
-[https://kylin256.github.io/2025/12/14/Treasure-locator/](https://kylin256.github.io/2025/12/14/Treasure-locator/)
-网址2号：上面这个打不开可以试下下面这个，需要多点几次刷新，可以不需要加速
-[https://kylin256.netlify.app/2025/12/14/Treasure-locator/](https://kylin256.netlify.app/2025/12/14/Treasure-locator/)
+- 网址1号：需要有Github加速，不然容易打不开
+  - [https://kylin256.github.io/2025/12/14/Treasure-locator/](https://kylin256.github.io/2025/12/14/Treasure-locator/)
+- 网址2号：上面这个打不开可以试下下面这个，需要多点几次刷新，可以不需要加速
+  - [https://kylin256.netlify.app/2025/12/14/Treasure-locator/](https://kylin256.netlify.app/2025/12/14/Treasure-locator/)
